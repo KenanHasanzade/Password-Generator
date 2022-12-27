@@ -1,0 +1,321 @@
+*{
+  font-family: 'Tomorrow', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  letter-spacing: 0.2em;
+}
+body{
+  background: #000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: flex;
+  width: 80%;
+  height: 80vh;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+.left_cont{
+  width: 50%;
+}
+h1{
+font-size: 40px;
+font-weight: 700;
+width: 200px;
+color: #F8EF00;
+letter-spacing: 0.2em;
+margin-bottom: 64px;
+}
+.inputdiv{
+  position: relative;
+  width: 588px;
+  height: 64px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 2px solid #00F0FF;
+  color: #00F0FF;
+  display: flex;
+  align-items: center;
+  flex-direction: row!important;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.inputdiv span { margin-left:20px ;}
+.password_check{
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 65px;
+  top: calc(50% - 12px);
+  justify-content: space-between;
+}
+.password_check div{
+  height: 2.5px;
+  background: #00F0FF;
+}
+.fa-rotate{
+ font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 12px);
+}
+.copy_password{
+  background-color: #F8EF00;
+  width: 350px;
+  height: 64px;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 75px;
+  border-right: 2px solid #FF003C;
+}
+.copy_password div{
+  background: black;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+}
+.copy_password span:nth-child(1){
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-left: 40px;
+ margin-right: 79px;
+}
+input[type=range] {
+  height: 28px;
+  background-color: #000000;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 588px;
+  border: none;
+  margin-bottom: 74px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 2px 2px 2px #A6A664;
+  background: #00F0FF;
+  border-radius: 5px;
+  border: 0px solid #F27B7F;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 2px #A6A6A6;
+  border: 0px solid #F27B7F;
+  height: 21px;
+  width: 21px;
+  border-radius: 0px;
+  background: #F8EF00;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #00F0FF;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 2px 2px 2px #A6A664;
+  background: #00F0FF;
+  border-radius: 5px;
+  border: 0px solid #F27B7F;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 2px #A6A6A6;
+  border: 0px solid #F27B7F;
+  height: 21px;
+  width: 21px;
+  border-radius: 0px;
+  background: #F8EF00;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #00F0FF;
+  border: 0px solid #F27B7F;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #A6A664;
+}
+input[type=range]::-ms-fill-upper {
+  background: #00F0FF;
+  border: 0px solid #F27B7F;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #A6A664;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 2px #A6A6A6;
+  border: 0px solid #F27B7F;
+  height: 21px;
+  width: 21px;
+  border-radius: 0px;
+  background: #F8EF00;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #00F0FF;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #00F0FF;
+}
+.selectors{
+  display: flex !important;
+  flex-direction: row !important;
+  color: white;
+  width: 511px;
+}
+.color{
+  width: 24px ;
+  height: 24px;
+  margin-right: 10px;
+  border: 2px solid #F8EF00 ;
+}
+.selectors div > div{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.left_selectors{
+  margin-right: 76px;
+}
+.selectors div{
+  width: 230px;
+  font-size: 16px;
+  font-weight: 400;
+}
+h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: #FAFAFA;
+}
+.right_cont{
+  display: flex;
+  margin-top: 124px;
+}
+.right_cont_inner{
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  margin-left: 142px;
+}
+.right_cont_inner h2{
+  margin-bottom: 32px;
+}
+.history{
+  width: 100%;
+  height: 300px;
+  overflow-y: auto;
+}
+.last{
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  color: #FAFAFA;
+}
+.clear{
+  width: 100%;
+  text-align: center;
+  color: #F8EF00;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 37px;
+  height: 40px;
+}
+.copy { margin-right: 10px;}
+.value { width: 30px;
+height: 30px;
+color: white;
+background: none;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: -25px;
+left: -5px;
+border-radius: 5px;
+font-weight: bolder;
+border: none;}
+.rangeinput { position: relative;
+}
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #F1F1F1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+.popupcontainer {color: white;
+position: absolute;
+right: 5px;
+bottom: 10px;
+width: 310px;
+height: 300px;
+display: flex!important;
+flex-direction: column!important;
+justify-content: flex-end!important;
+overflow: hidden;}
+.popup{
+border: 2px solid white;
+margin: 10px;
+width: 300px;
+height: 40px;
+position: relative;
+animation-name: popup;
+animation-duration: 4s;
+display: flex;
+align-items: center;
+justify-content: center;}
+@keyframes popup {
+0% { right: -400px;}
+50% {right: 0px;}
+100% { right: -400px;}
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0803968b82.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Password generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left_cont">
+        <h1>PASSWORD GENERATOR</h1>
+        <div class="inputdiv">
+          <span></span>
+          <i
+            class="fa-solid fa-rotate"
+            style="color: #00f0ff"
+            onclick="rangechange()"
+          ></i>
+          <div class="password_check">
+            <div class="check"></div>
+            <div class="check"></div>
+            <div class="check"></div>
+            <div class="check"></div>
+          </div>
+        </div>
+        <div class="copy_password" onclick="copytext()">
+          <span>COPY PASSWORD</span>
+          <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          <div></div>
+        </div>
+        <div class="rangeinput">
+          <input
+            type="range"
+            max="20"
+            min="1"
+            id="range"
+            value="0"
+            oninput="rangechange()"
+          />
+          <span class="value"></span>
+        </div>
+        <div class="selectors">
+          <div class="left_selectors">
+            <div class="tickbox">
+              <span class="color"></span>
+              <span>Uppercase letters</span>
+            </div>
+            <div class="tickbox">
+              <span class="color"></span>
+              <span>Numbers</span>
+            </div>
+          </div>
+          <div class="right_selectors">
+            <div class="tickbox">
+              <span class="color"></span>
+              <span>Lowercase letters</span>
+            </div>
+            <div class="tickbox">
+              <span class="color"></span>
+              <span>Symbols</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right_cont">
+        <div class="right_cont_inner">
+          <span>
+            <h2>PASSWORD HISTORY</h2>
+          </span>
+          <div class="history"></div>
+          <span class="clear" onclick="clearall()"> Clear History </span>
+        </div>
+      </div>
+      <div class="popupcontainer"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
